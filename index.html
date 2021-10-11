@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Films_API</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="title">Films</h1>
+        
+        <form id="form" class="form">
+            <input type="text" class="input" id="search_input" placeholder="Search ...">
+            <select id="films_type" class="input select">
+                <option value="all" class="type">All</option>
+            </select>
+            <button class="search_btn" id="search_btn">SEARCH</button>
+        </form>
+        
+        <div class="btn_wrapper">
+            <button class="btn_chevron" id="prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="btn_chevron" id="next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        
+        <ul id="list" class="films__card-wrapper"></ul>
+        
+        <template id="template">
+            <li class="card">
+                <img class="card__img" src="http://picsum.photos/250/300" alt="img" width="250" height="300">
+                <div class="card__text">
+                    <h2 class="card__title">Title</h2>
+                </div>
+            </li>
+        </template>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>

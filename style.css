@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Arial" ,sans-serif;
+    background-color: #ccc1c1;
+}
+
+img{
+    width: 100%;
+}
+
+.container{
+    max-width: 1300px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.title{
+    text-align: center;
+    font-size: 40px;
+    color: #14279B;
+}
+
+.films__card-wrapper{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card{
+    width: 23%;
+    margin-bottom: 25px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    background-color: #222;
+}
+
+.card__text{
+    padding: 10px;
+}
+
+.card__title{
+    color: #fff;
+}
+
+.card__img{
+    border-radius: 8px 8px 0 0;
+    height: 400px;
+}
+
+.spinner{
+    position: absolute;
+    top: 50%;
+    margin-top: -135px;
+    max-width: 270px;
+}
+
+.form{
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.input{
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    width: 40%;
+    appearance: none;
+    background-color: #fff;
+    border: 1px solid #555;
+}
+
+.input:focus{
+    outline: 1px solid #555;
+}
+
+.select{
+    text-align: center; 
+}
+
+.search_btn{
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid #555;
+}
+
+.search_btn:hover{
+    outline: 1px solid #555;
+}
+
+.btn_wrapper{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.btn_chevron{
+    border: none;
+    background-color: transparent;
+    font-size: 45px;
+    cursor: pointer;
+    margin: 10px;
+    color: rgb(22, 22, 87);
+}
+
+.btn_chevron:disabled{
+    opacity: 0.4;
+}
+
+@media(max-width:1100px){
+    .card{
+        width: 31%;
+    }
+}
+@media(max-width:810px){
+    .card{
+        width: 45%;
+    }
+}
+@media(max-width:570px){
+    .card{
+        width: 70%;
+    }
+}
+@media(max-width:480px){
+    .card{
+        width: 80%;
+    }
+}
+@media(max-width:400px){
+    .card{
+        width: 90%;
+    }
+}
+@media(max-width:360px){
+    .card{
+        width: 100%;
+    }
+}
